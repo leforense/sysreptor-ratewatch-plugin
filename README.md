@@ -22,6 +22,10 @@ A SysReptor plugin that provides a visual dashboard for analyzing Burp Suite Int
 
 ## Installation (SysReptor)
 
+> **Note:** For the official SysReptor plugin documentation, refer to [https://docs.sysreptor.com/setup/plugins/](https://docs.sysreptor.com/setup/plugins/).
+
+> **Note:** If you are already using other plugins (e.g. built-in ones like `cyberchef`), mounting a custom `plugins/` directory will replace the container's internal plugins folder. You will need to copy those built-in plugins locally alongside this one so they continue to work.
+
 1. Clone the repository directly into your SysReptor `plugins/` folder:
    ```bash
    git clone https://github.com/leforense/sysreptor-ratewatch-plugin.git /path/to/sysreptor/plugins/ratewatchplugin
