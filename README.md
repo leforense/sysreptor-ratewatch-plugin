@@ -54,9 +54,23 @@ npm run build # production build → ../static/
 ## How to Export from Burp Suite
 
 1. Run an **Intruder** attack in Burp Suite.
-2. After the attack, right-click the results table → **Save results** → **CSV**.
+2. After the attack, right-click the results table → **Save results** → **Select all Columns** → **CSV**.
 3. Upload the `.csv` file to the RateWatch dashboard.
 
 ## License
 
 Released into the public domain under the [Unlicense](LICENSE). No attribution required.
+
+## Demo
+
+Exporting:
+
+<img width="1318" height="922" alt="ratewatch" src="https://github.com/user-attachments/assets/949558ba-f98c-4c5c-a4c6-1a1505d0b501" />
+
+
+Importing:
+
+<img width="1722" height="1284" alt="ratewatch-plugin" src="https://github.com/user-attachments/assets/fc1ba520-20f5-420e-a52c-d0f407e30174" />
+
+
+
