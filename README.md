@@ -35,12 +35,23 @@ A SysReptor plugin that provides a visual dashboard for analyzing Burp Suite Int
    ```
    This outputs static files to `plugins/ratewatchplugin/static/`.
 
-3. Add the plugin to your SysReptor `ENABLED_PLUGINS` setting:
+3. Create a `docker-compose.override.yml` in your SysReptor `deploy/` folder to mount the plugins directory into the container:
+   ```yaml
+   services:
+     app:
+       volumes:
+         - type: bind
+           source: ./plugins
+           target: /app/plugins
+           read_only: true
+   ```
+
+4. Add the plugin to your SysReptor `ENABLED_PLUGINS` setting in `app.env`:
    ```
    ENABLED_PLUGINS=ratewatchplugin
    ```
 
-4. Restart SysReptor. The **RateWatch** entry will appear in the main menu.
+5. Restart SysReptor. The **RateWatch** entry will appear in the main menu.
 
 ## Frontend Development
 
