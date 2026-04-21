@@ -22,14 +22,14 @@ A SysReptor plugin that provides a visual dashboard for analyzing Burp Suite Int
 
 ## Installation (SysReptor)
 
-1. Copy this directory into your SysReptor `plugins/` folder:
+1. Clone the repository directly into your SysReptor `plugins/` folder:
    ```bash
-   cp -r RateWatch-Plugin/ /path/to/sysreptor/plugins/ratewatchplugin/
+   git clone https://github.com/leforense/sysreptor-ratewatch-plugin.git /path/to/sysreptor/plugins/ratewatchplugin
    ```
 
 2. Build the frontend:
    ```bash
-   cd plugins/ratewatchplugin/frontend
+   cd /path/to/sysreptor/plugins/ratewatchplugin/frontend
    npm install
    npm run build
    ```
