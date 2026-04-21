@@ -1,0 +1,30 @@
+# Logs
+*.log
+npm-debug.log*
+
+# Frontend dependencies and build output
+frontend/node_modules/
+static/
+
+# Root node_modules (legacy, from before restructuring)
+node_modules/
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Lock files from LibreOffice
+.~lock.*
+
+# Claude Code memory
+.claude/
+
+# Temp files
+Temp/
