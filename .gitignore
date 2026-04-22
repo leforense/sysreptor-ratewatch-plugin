@@ -23,8 +23,9 @@ node_modules/
 # Lock files from LibreOffice
 .~lock.*
 
-# Claude Code memory
+# Claude Code memory and local docs
 .claude/
+CLAUDE.md
 
 # Temp files
 Temp/
